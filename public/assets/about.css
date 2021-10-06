@@ -1,0 +1,283 @@
+/* Global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 6px;
+  min-height: 70%;
+  border-top: rgb(161, 79, 24) 30px solid;
+  border-bottom: white 20px solid;
+  background-image: url("../assets/images/Coffee\ logo.png");
+  background-position: top;
+  background-size: 600px;
+}
+header a {
+  color: rgb(241, 138, 21);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: center;
+}
+
+header #branding h1 {
+  margin: 0;
+  color: rgb(241, 138, 21);
+}
+
+header nav {
+  float: left;
+  margin: 15px;
+}
+
+header nav .material-icons {
+  font-size: 30px;
+  color: rgb(235, 227, 217);
+}
+
+header .highlight,
+header .current a {
+  color: rgb(236, 209, 173);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*branding*/
+
+#center {
+  text-align: center;
+}
+
+#branding {
+  float: right;
+  margin: 5px;
+}
+
+#branding a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*showcase*/
+
+#showcase {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 40px;
+  background: rgb(240, 207, 164);
+  text-align: center;
+  color: rgb(95, 34, 5);
+}
+
+#showcase h1 {
+  margin: 20px;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  line-height: 1em;
+}
+
+/*Newsletter*/
+
+#newsletter {
+  padding: 5px;
+  color: rgb(95, 34, 5);
+  background-color: rgb(252, 237, 220);
+  text-align: center;
+  font-size: 20px;
+}
+
+#newsletter h1 {
+  font-size: 20px;
+  float: center;
+}
+
+#newsletter form {
+  float: center;
+  margin-bottom: 15px;
+  color: rgb(95, 34, 5);
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 450px;
+  border: none;
+  border-radius: 6px;
+}
+
+.button_1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px;
+  background: rgb(95, 34, 5);
+  cursor: pointer;
+}
+
+/* Error message*/
+
+#error_message {
+  margin-bottom: 20px;
+  background: rgb(243, 131, 127);
+  padding: 0px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+/*footer*/
+
+.footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+  color: rgb(235, 227, 217);
+  background-color: rgb(71, 32, 14);
+  text-align: center;
+  margin-top: 0;
+}
+.footer .social a {
+  margin: 0 20px;
+  font-size: 25px;
+  color: rgb(235, 227, 217);
+}
+
+.footer h1 {
+  margin: 6px;
+  font-size: 18px;
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 14px;
+  color: rgb(235, 227, 217);
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*ABOUT*/
+
+#aboutphoto {
+  min-height: 450px;
+  background: url("../assets/Images/coffee11.jfif") 0 -280px;
+  text-align: center;
+}
+
+#aboutphoto h1 {
+  margin: 90px;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  line-height: 1.8em;
+  color: rgb(95, 34, 5);
+}
+
+#aboutphoto p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 19px;
+  color: rgb(95, 34, 5);
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+section .split {
+  display: flex;
+}
+section .split > * {
+  flex-basis: 100%;
+}
+
+section .split > * + * {
+  margin-left: 8em;
+}
+
+section .split p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+  color: rgb(95, 34, 5);
+}
+
+section .split h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 28px;
+  color: rgb(95, 34, 5);
+}
+
+#aboutphoto {
+  min-height: 550px;
+  background: url("../assets/Images/coffee11.jfif") 0 -280px;
+}
+
+/*Video*/
+
+.video {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  opacity: none;
+  overflow: hidden;
+}
+
+.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.video h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}

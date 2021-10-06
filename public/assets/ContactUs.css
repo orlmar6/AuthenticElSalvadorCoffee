@@ -1,0 +1,342 @@
+/* Global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header {
+  padding-top: 6px;
+  min-height: 70%;
+  border-top: rgb(161, 79, 24) 30px solid;
+  border-bottom: white 20px solid;
+  background-image: url("../assets/images/Coffee\ logo.png");
+  background-position: top;
+  background-size: 600px;
+}
+header a {
+  color: rgb(241, 138, 21);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: center;
+}
+
+header #branding h1 {
+  margin: 0;
+  color: rgb(241, 138, 21);
+}
+
+header nav {
+  float: left;
+  margin: 15px;
+}
+header .highlight,
+header .current a {
+  color: rgb(236, 209, 173);
+  font-weight: bold;
+}
+
+header nav .material-icons {
+  font-size: 30px;
+  color: rgb(235, 227, 217);
+}
+
+header a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+#center {
+  text-align: center;
+}
+
+#branding {
+  float: right;
+  margin: 5px;
+}
+
+#branding a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*map*/
+
+.MapPhoto {
+  min-height: 215px;
+  background: url("../assets/Images/map.png") 0 -290px;
+  background-position: left;
+}
+
+/* Footerphoto*/
+
+#FooterPhoto2 {
+  min-height: 420px;
+  background: url("../assets/Images/coffee10.jpg") 0 -220px;
+}
+
+/*footer*/
+
+.footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 25px;
+  color: rgb(235, 227, 217);
+  background-color: rgb(71, 32, 14);
+  text-align: center;
+}
+.footer .social a {
+  margin: 0 20px;
+  font-size: 25px;
+  color: rgb(235, 227, 217);
+}
+
+.footer h1 {
+  margin: 6px;
+  font-size: 18px;
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 14px;
+  color: rgb(235, 227, 217);
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* PhotoContact Us*/
+
+#ContactUSphoto h1 {
+  margin: 230px;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  line-height: 1.8em;
+  color: rgb(252, 237, 220);
+  text-align: center;
+}
+
+#ContactUSphoto {
+  min-height: 550px;
+  background: url("../assets/Images/coffee22.jfif") 0 -280px;
+}
+
+/* Form Contact Us*/
+
+.section-contact {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 60vh;
+  width: 200vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/Images/ElSalvadorCoffee11.png");
+  background-position: center;
+}
+
+.container1 {
+  width: 50%;
+  background: rgb(255, 248, 239);
+  border-radius: 6px;
+  padding: 30px 60px 40px 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container1 .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container1 .content .left-side {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(95, 34, 5);
+}
+
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details i {
+  font-size: 30px;
+  color: rgb(95, 34, 5);
+  margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(70, 24, 3);
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two,
+.content .left-side .details .text-three {
+  font-size: 14px;
+  color: rgb(196, 136, 59);
+}
+
+/* right side */
+
+.container1 .content .right-side {
+  width: 60%;
+  margin-left: 75px;
+  padding: 40px;
+}
+
+.content .right-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(95, 34, 5);
+  text-align: center;
+}
+
+.input-box {
+  height: 50px;
+  width: 250px;
+  margin: 0 0;
+}
+
+.right-side .input-box input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 60%;
+  width: 152%;
+  border: none;
+  background: rgb(211, 184, 150);
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+.right-side .input-box textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 100%;
+  width: 152%;
+  border: none;
+  background: rgb(211, 184, 150);
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 17px;
+  color: rgb(70, 24, 3);
+  text-align: center;
+}
+
+label {
+  color: rgb(70, 24, 3);
+}
+
+.right-side .message-box {
+  min-height: 110px;
+  margin-top: 6px;
+}
+
+.right-side .btn input[type="submit"] {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: rgb(95, 34, 5);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Error message*/
+
+#error_message {
+  margin-bottom: 20px;
+  background: rgb(243, 131, 127);
+  padding: 0px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  width: 97%;
+}
+@media (max-width: 950px) {
+  .container1 {
+    width: 90%;
+    padding: 30px 35px 40px 35px;
+  }
+}
+@media (max-width: 950px) {
+  .container1 {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container1 .content {
+    flex-direction: column-reverse;
+  }
+  .container1 .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container1 .content .left-side::before {
+    display: none;
+  }
+  .container1 .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}

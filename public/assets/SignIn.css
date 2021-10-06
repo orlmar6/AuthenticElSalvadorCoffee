@@ -1,0 +1,333 @@
+/* Global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#center {
+  text-align: center;
+}
+
+/*Header*/
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 6px;
+  min-height: 70%;
+  border-top: rgb(161, 79, 24) 30px solid;
+  border-bottom: white 20px solid;
+  background-image: url("../assets/images/Coffee\ logo.png");
+  background-position: top;
+  background-size: 600px;
+}
+header a {
+  color: rgb(241, 138, 21);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+
+header #branding {
+  float: center;
+}
+
+header #branding h1 {
+  margin: 0;
+  color: rgb(241, 138, 21);
+}
+
+header nav {
+  float: left;
+  margin: 15px;
+}
+
+header nav .material-icons {
+  font-size: 30px;
+  color: rgb(235, 227, 217);
+}
+
+header .highlight,
+header .current a {
+  color: rgb(236, 209, 173);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*Branding*/
+
+#branding {
+  float: right;
+  margin: 5px;
+}
+
+#branding a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*Section*/
+
+.section1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../assets/images/coffee37.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+  background-size: 1520px;
+}
+
+.section1.active {
+  background-image: url("../assets/images/coffee56a.jpg");
+}
+
+.button_2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  border: 5px;
+  padding: 10px 24px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  outline: none;
+  border-radius: none;
+  background: rgb(145, 144, 68);
+  cursor: pointer;
+}
+.section1 .container {
+  position: relative;
+  width: 800px;
+  height: 546px;
+  background: white;
+  box-shadow: 0 15px 50px black;
+  overflow: hidden;
+}
+
+.section1 .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.section1 .container .user .formBx .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(95, 34, 5);
+}
+
+.section1 .container .user .formBx input[type="submit"] {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 100px;
+  background: rgb(145, 92, 68);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.section1 .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transition: 0.5;
+}
+
+.section1 .container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Other part of the Section*/
+
+.section1 .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+.section1 .container .user .formBx h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.section1 .container .user .formBx input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  padding: 10px;
+  background: rgb(226, 216, 195);
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.section1 .container .user .formBx .signup {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgb(70, 67, 67);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.section1 .container .user.signupBx .formBx input[type="submit"] {
+  background: rgb(145, 144, 68);
+}
+
+.section1 .container .signupBx {
+  pointer-events: none;
+}
+
+.section1 .container.active .signupBx {
+  pointer-events: initial;
+}
+
+.section1 .container .signupBx .formBx {
+  top: 100%;
+}
+
+.section1 .container.active .signupBx .formBx {
+  top: 0;
+}
+
+.section1 .container .signupBx .imgBx {
+  top: -100%;
+  transition: 0.5s;
+}
+
+.section1 .container.active .signupBx .imgBx {
+  top: 0;
+}
+
+.section1 .container .siginBx .formBx {
+  top: 0;
+}
+
+.section1 .container.active .signinBx .formBx {
+  top: 100%;
+}
+
+.section1 .container .siginBx .imgBx {
+  top: 0;
+  transition: 0.5ms;
+}
+
+.section1 .container.active .signinBx .imgBx {
+  top: -100%;
+}
+
+@media (max-width: 991px) {
+  .section1 .container {
+    max-width: 400px;
+  }
+  .section1 .container .imgBx {
+    display: none;
+  }
+  .section1 .container .user .formBx {
+    width: 100%;
+  }
+  .section1 .container .active .signinBx .formBx {
+    top: -100%;
+  }
+}
+
+.button-2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  border: 5px;
+  padding: 10px 24px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  outline: none;
+  border-radius: none;
+  background: rgb(145, 92, 68);
+  cursor: pointer;
+}
+
+/* Error message*/
+
+#error_message {
+  margin-bottom: 20px;
+  background: rgb(243, 131, 127);
+  padding: 0px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+*footer*/ .footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+  color: rgb(235, 227, 217);
+  background-color: rgb(71, 32, 14);
+  text-align: center;
+  margin-top: 0;
+}
+.footer .social a {
+  margin: 0 20px;
+  font-size: 25px;
+  color: rgb(235, 227, 217);
+}
+
+.footer h1 {
+  margin: 6px;
+  font-size: 18px;
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 14px;
+  color: rgb(235, 227, 217);
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

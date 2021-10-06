@@ -1,0 +1,290 @@
+/* Global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 6px;
+  min-height: 70%;
+  border-top: rgb(161, 79, 24) 30px solid;
+  border-bottom: white 20px solid;
+  background-image: url("../assets/images/Coffee\ logo.png");
+  background-position: top;
+  background-size: 600px;
+}
+header a {
+  color: rgb(241, 138, 21);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+
+header #branding {
+  float: center;
+}
+
+header #branding h1 {
+  margin: 0;
+  color: rgb(241, 138, 21);
+}
+
+header nav {
+  float: left;
+  margin: 15px;
+}
+
+header nav .material-icons {
+  font-size: 30px;
+  color: rgb(235, 227, 217);
+}
+
+header .highlight,
+header .current a {
+  color: rgb(236, 209, 173);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*branding*/
+
+#center {
+  text-align: center;
+}
+
+#branding {
+  float: right;
+  margin: 5px;
+}
+
+#branding a:hover {
+  color: brown;
+  font-weight: bold;
+}
+
+/*showcase*/
+
+#showcase {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 40px;
+  background: rgb(240, 207, 164);
+  text-align: center;
+  color: rgb(95, 34, 5);
+}
+
+#showcase h1 {
+  margin: 20px;
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  line-height: 1em;
+}
+
+/*boxes*/
+
+#boxes .box {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 15px;
+  text-align: center;
+  float: left;
+  width: 29%;
+  padding: 10px;
+  background-color: rgb(252, 237, 220);
+}
+
+#boxes .box img {
+  width: 100%;
+  height: 100%;
+}
+
+#boxes .box h2 {
+  line-height: 0.1em;
+  color: rgb(95, 34, 5);
+  font-size: 35px;
+}
+
+#boxes .box h4 {
+  line-height: 0.1em;
+  color: rgb(95, 34, 5);
+  font-size: 30px;
+}
+
+#boxes .box p {
+  line-height: 0.1em;
+  color: rgb(95, 34, 5);
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Newsletter*/
+
+#newsletter {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 5px;
+  color: rgb(95, 34, 5);
+  background-color: rgb(252, 237, 220);
+  text-align: center;
+  font-size: 20px;
+}
+
+#newsletter h1 {
+  font-size: 20px;
+  float: center;
+}
+
+#newsletter form {
+  float: center;
+  margin-bottom: 15px;
+  color: rgb(95, 34, 5);
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 450px;
+  border: none;
+  border-radius: 6px;
+}
+
+.button_1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px;
+  background: rgb(95, 34, 5);
+  cursor: pointer;
+}
+
+/* Error message*/
+
+#error_message {
+  margin-bottom: 20px;
+  background: rgb(243, 131, 127);
+  padding: 0px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+/* Footerphoto*/
+#FooterPhoto {
+  min-height: 215px;
+  background: url("../assets/images/Coffee30.jpg") 0 -295px;
+  background-position: center;
+}
+/*footer*/
+
+.footer1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 25px;
+  margin-top: 30px;
+  color: rgb(235, 227, 217);
+  background-color: rgb(71, 32, 14);
+  text-align: center;
+}
+.footer1 .social a {
+  margin: 0 20px;
+  font-size: 25px;
+  color: rgb(235, 227, 217);
+}
+
+.footer1 h1 {
+  margin: 6px;
+  font-size: 18px;
+}
+
+.footer1 p {
+  margin: 5px;
+  font-size: 14px;
+  color: rgb(235, 227, 217);
+}
+
+.footer1 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Animation steam*/
+
+.steam img {
+  width: 80px;
+  animation: steam 6s normal infinite;
+}
+
+.steam {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: 0px;
+}
+
+@keyframes steam {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-80vh);
+    opacity: 0;
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  opacity: none;
+  overflow: hidden;
+}
+
+.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
